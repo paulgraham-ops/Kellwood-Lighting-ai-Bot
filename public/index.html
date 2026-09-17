@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kellwood Brainy Bot</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><text y=%2220%22 font-size=%2220%22>💡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.44.9 1.02.9 1.6v.5a1 1 0 0 0 1 1h3.2a1 1 0 0 0 1-1v-.5c0-.58.3-1.16.9-1.6A6 6 0 0 0 12 3Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19.5h4M10.6 21.5h2.8" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="brand">
+        <span class="name">Kellwood Brainy Bot</span>
+        <span class="tag">Product &amp; company assistant — demo</span>
+      </div>
+      <div class="status-dot" id="statusDot"><i></i><span id="statusText">checking…</span></div>
+    </header>
+
+    <main id="chatMain">
+      <div class="intro" id="intro">
+        <h1>Ask about Kellwood's lighting range</h1>
+        <p>Grounded in Kellwood's own product data — sectors, product tiers, and specs (wattage, IP rating, ATEX certification, warranty) across their series. Try a question:</p>
+        <div class="chips" id="chips">
+          <button class="chip" type="button">What ATEX-certified fittings do you have for hazardous areas?</button>
+          <button class="chip" type="button">What's the difference between the Franklin and McFarlane floodlights?</button>
+          <button class="chip" type="button">Do you have anything suitable for a swimming pool?</button>
+          <button class="chip" type="button">Tell me about Wireless Pro and which fittings support it.</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <form id="composerForm">
+        <textarea id="input" rows="1" placeholder="Ask about products, sectors, or the company…" disabled></textarea>
+        <button type="submit" class="send-btn" id="sendBtn" disabled aria-label="Send">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="stop-btn" id="stopBtn" hidden aria-label="Stop">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>
+        </button>
+      </form>
+      <p class="foot-note" id="footNote">Internal demo — verify specifics before quoting a customer.</p>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

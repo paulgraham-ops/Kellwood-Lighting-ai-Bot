@@ -1,0 +1,20 @@
+{
+  "name": "kellwood-brainy-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kellwood Lighting product & company chat assistant",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
+}
